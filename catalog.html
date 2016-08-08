@@ -7,20 +7,23 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <ul>
-          <li>
-            <a>Информация</a>
-          </li>
-          <li>
-            <a>Фото и видео</a>
-          </li>
-          <li>
-            <a>Карта штата</a>
-          </li>
-          <li>
-            <a>Гостиницы</a>
-          </li>
-        </ul>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a>Информация</a>
+            </li>
+            <li>
+              <a>Фото и видео</a>
+            </li>
+            <img src="http://placehold.it/30x30" width="30" height="30" alt="logo">
+            <li>
+              <a>Карта штата</a>
+            </li>
+            <li>
+              <a>Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="container">
@@ -71,55 +74,61 @@
             <a href="#">По рейтингу</a>
           </li>
         </ul>
+        <div class="sort-filters-switchers">
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
       </div>
-      <article class="hotel-showcase">
-        <section class="hotel-showcase-left">
-          <img src="http://placehold.it/130x80"  width="130" height="80" alt="Amara Resort & Spa">
-        </section>
-        <section class="hotel-showcase-center">
-          <h2 class="hotel-name">Amara Resort & Spa</h2>
-          <span>Гостиница</span>
-          <span>От 3500 Р.</span>
-          <a class="btn more" href="#">Подробнее</a>
-          <a class="btn book" href="#">Забронировать</a>
-        </section>
-        <section class="hotel-showcase-right">
-          <img src="http://placehold.it/20x10" width="20" height="10" alt="rating-icon">
-          <b class="rating">Рейтинг:8.5</b>
-        </section>
-      </article>
-      <article class="hotel-showcase">
-        <section class="hotel-showcase-left">
-          <img src="http://placehold.it/130x80"  width="130" height="80" alt="Desert Quail Inn">
-        </section>
-        <section class="hotel-showcase-center">
-          <h2 class="hotel-name">Desert Quail Inn</h2>
-          <span>Мотель</span>
-          <span>От 2000 Р.</span>
-          <a class="btn more" href="#">Подробнее</a>
-          <a class="btn book" href="#">Забронировать</a>
-        </section>
-        <section class="hotel-showcase-right">
-          <img src="http://placehold.it/20x10" width="20" height="10" alt="rating-icon">
-          <b class="rating">Рейтинг:8.9</b>
-        </section>
-      </article>
-      <article class="hotel-showcase">
-        <section class="hotel-showcase-left">
-          <img src="http://placehold.it/130x80"  width="130" height="80" alt="Villas At Poco Diablo">
-        </section>
-        <section class="hotel-showcase-center">
-          <h2 class="hotel-name">Villas At Poco Diablo</h2>
-          <span>Апартаменты</span>
-          <span>От 4000 Р.</span>
-          <a class="btn more" href="#">Подробнее</a>
-          <a class="btn book" href="#">Забронировать</a>
-        </section>
-        <section class="hotel-showcase-right">
-          <img src="http://placehold.it/30x10" width="30" height="10" alt="rating-icon">
-          <b class="rating">Рейтинг:9.2</b>
-        </section>
-      </article>
+      <div class="search-results">
+        <article class="hotel-showcase">
+          <section class="hotel-showcase-left">
+            <img src="http://placehold.it/130x80"  width="130" height="80" alt="Amara Resort & Spa">
+          </section>
+          <section class="hotel-showcase-center">
+            <h2 class="hotel-name">Amara Resort & Spa</h2>
+            <span>Гостиница</span>
+            <span>От 3500 Р.</span>
+            <a class="btn more" href="#">Подробнее</a>
+            <a class="btn book" href="#">Забронировать</a>
+          </section>
+          <section class="hotel-showcase-right">
+            <div class="rating rating-4"></div>
+            <b class="rating">Рейтинг:8.5</b>
+          </section>
+        </article>
+        <article class="hotel-showcase">
+          <section class="hotel-showcase-left">
+            <img src="http://placehold.it/130x80"  width="130" height="80" alt="Desert Quail Inn">
+          </section>
+          <section class="hotel-showcase-center">
+            <h2 class="hotel-name">Desert Quail Inn</h2>
+            <span>Мотель</span>
+            <span>От 2000 Р.</span>
+            <a class="btn more" href="#">Подробнее</a>
+            <a class="btn book" href="#">Забронировать</a>
+          </section>
+          <section class="hotel-showcase-right">
+            <div class="rating rating-2"></div>
+            <b class="rating">Рейтинг:8.9</b>
+          </section>
+        </article>
+        <article class="hotel-showcase">
+          <section class="hotel-showcase-left">
+            <img src="http://placehold.it/130x80"  width="130" height="80" alt="Villas At Poco Diablo">
+          </section>
+          <section class="hotel-showcase-center">
+            <h2 class="hotel-name">Villas At Poco Diablo</h2>
+            <span>Апартаменты</span>
+            <span>От 4000 Р.</span>
+            <a class="btn more" href="#">Подробнее</a>
+            <a class="btn book" href="#">Забронировать</a>
+          </section>
+          <section class="hotel-showcase-right">
+            <div class="rating rating-3"></div>
+            <b class="rating">Рейтинг:9.2</b>
+          </section>
+        </article>
+      </div>
     </main>
     <footer class="footer-main">
       <div class="container">

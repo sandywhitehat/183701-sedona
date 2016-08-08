@@ -7,20 +7,23 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <ul>
-          <li>
-            <a>Информация</a>
-          </li>
-          <li>
-            <a>Фото и видео</a>
-          </li>
-          <li>
-            <a>Карта штата</a>
-          </li>
-          <li>
-            <a>Гостиницы</a>
-          </li>
-        </ul>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a>Информация</a>
+            </li>
+            <li>
+              <a>Фото и видео</a>
+            </li>
+            <img src="http://placehold.it/30x30" width="30" height="30" alt="logo">
+            <li>
+              <a>Карта штата</a>
+            </li>
+            <li>
+              <a>Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="container">
@@ -31,18 +34,18 @@
         <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
       </div>
-      <article class="reasons">
-        <section class="reasons-one">
-          <div class="reasons-one-left">
+      <section class="reasons">
+        <div class="visual-reasons">
+          <div class="visual-reasons_text visual-reasons--left-block">
             <h2 class="reasons-title">Настоящий городок</h2>
             <p>-№1-</p>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div class="reasons-one-right">
+          <div class="visual-reasons__picture visual-reasons--rigth-block">
             <img  src="http://placehold.it/600x250" width="600" height="250" alt="Настоящий городок">
           </div>
-        </section>
-        <section class="reasons-features">
+        </div>
+        <div class="reasons-features">
           <div class="reasons-features-item">
             <img src="http://placehold.it/20x25" width="20" height="25" alt="house-icon">
             <b class="features-name">Жилье</b>
@@ -58,41 +61,38 @@
             <b class="features-name">Сувениры</b>
             <p>Не только китайского, но и местного производства!</p>
           </div>
-        </section>
-        <section class="reasons-two">
-          <div class="reasons-two-left">
+        </div>
+        <div class="visual-reasons">
+          <div class="visual-reasons__picture visual-reasons--left-block">
             <img  src="http://placehold.it/600x250" width="600" height="250" alt="Мост дьявола">
           </div>
-          <div class="reasons-two-right">
+          <div class="visual-reasons_text visual-reasons--right-block">
             <h2 class="reasons-title">Там есть мост дьявола</h2>
             <p>- №2 -</p>
             <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
           </div>
-        </section>
-        <section class="reasons-features">
-          <div class="reasons-features-item">
+        </div>
+        <div class="reasons-countdown">
+          <div class="reasons-countdown-item">
             <b class="features-name">Небольшая площадь</b>
             <p>- №3 -</p>
             <p>Все достопромечательности находятся очень близко</p>
           </div>
-          <div class="reasons-features-item">
+          <div class="reasons-countdown-item">
             <b class="features-name">Красивая дорога</b>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div class="reasons-features-item">
+          <div class="reasons-countdown-item">
             <b class="features-name">Мало туристов</b>
             <p>- №5 -</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
-        </section>
-      </article>
+        </div>
+      </section>
       <div class="text-block">
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-      </div>
-      <div class="map">
-        <img src="http://placehold.it/900x500" width="900" height="500" alt="Карта">
       </div>
       <div class="search-form">
         <b class="search-form-title">Поиск гостиницы в Седоне</b>
@@ -106,8 +106,8 @@
           <label for="kids">Дети:</label>
           <input type="number" id="kids" name="kids" step="1" value="0">
           <button class="btn" type="submit" name="search-hotels">Найти</button>
-        </form>
-      </div>
+       </form>
+     </div>
     </main>
     <footer class="footer-main">
       <div class="container">
