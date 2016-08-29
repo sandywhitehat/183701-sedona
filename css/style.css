@@ -127,7 +127,7 @@ main{
 }
 
 
-.search-form-title {
+.search-container-title {
   display: flex;
   width: 568px;
   height: 86px;
@@ -137,7 +137,7 @@ main{
   text-align: center;
 }
 
-.search-form form {
+.search-container form {
   width: 568px;
   height: 424px;
 
