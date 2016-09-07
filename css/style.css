@@ -83,7 +83,7 @@ h2 {
   font-weight: bold;
   color: #333333;
   text-decoration: none;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   padding: 0;
 }
 
@@ -272,8 +272,9 @@ main{
   color: #ffffff;
   font-weight: bold;
   border: none;
+  outline: none;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   cursor: pointer;
   z-index: 2;
 }
@@ -442,7 +443,7 @@ main{
   font-weight: bold;
   border: none;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -513,25 +514,33 @@ main{
   background-color: #5496bd;
 }
 
-.footer-main .footer-copyright {
-  background: url('../img/academy-logo.png') no-repeat 184px 40px;
+
+.footer-main .footer-copyright .academy-logo {
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  width: 123px;
+  height: 39px;
+  background: url('../img/academy-logo.png') no-repeat 5px -5px;
 }
 
-.footer-main .footer-copyright:hover {
-  background: url('../img/academy-logo-hover.png') no-repeat 184px 40px;
+.footer-main .footer-copyright .academy-logo:hover {
+  background: url('../img/academy-logo.png') no-repeat -118px -5px;
 }
 
-.footer-main .footer-copyright:active {
-  background: url('../img/academy-logo-active.png') no-repeat 184px 40px;
+.footer-main .footer-copyright .academy-logo:active {
+  background: url('../img/academy-logo.png') no-repeat -241px -5px;
 }
 
 .footer-main .footer-copyright a {
   display: block;
+  position:relative;
   margin-top: 45px;
   margin-left: 102px;
   text-decoration: none;
   font-size: 14px;
-  line-height: 26px;
+  height: 39px;
+  line-height: 39px;
   color: #333333;
 }
 
