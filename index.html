@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -21,16 +22,16 @@
     <main class="container">
       <div class="cover"></div>
       <div class="text-block-1">
-        <h1>Седона - небольшой городок в Аризоне,<br>
+        <h1>Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <section class="reasons">
         <div class="visual-reasons">
           <div class="visual-reasons_text">
             <h2>Настоящий<br> городок</h2>
             <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
+            <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
           </div>
           <div class="visual-reasons__picture">
             <img src="img/reasons-1.jpg" width="800" height="256" alt="Настоящий городок">
@@ -82,24 +83,41 @@
         </div>
       </section>
       <div class="search-container">
+        <img src="img/map-background.jpg" width="1200" height="593" alt="map">
         <div class="text-block-2">
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         </div>
-        <button type="btn" class="search-container-title">Поиск гостиницы в Седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <label>
-            Дата заезда:<input type="text" id="date-in" name="date-in" value="24 апреля 2016"><span class="icon-calendar"></span>
-          </label>
-          <label>
-            Дата заезда:<input type="text" id="date-out" name="date-out" value="4 июля 2016"><span class="icon-calendar"></span>
-          </label>
-          <label>
-            Взрослые:<input type="text" id="adults" name="adults" value="2">
-          </label>
-          <label>
-            Дети:<input type="text" id="kids" name="kids" value="0">
-          </label>
+        <button type="button" class="search-form-title">Поиск гостиницы в Седоне</button>
+        <form class="search-form"  action="#" method="get">
+          <div class="input-container">
+            <label for="date-in">Дата заезда:</label>
+            <input class="date-field" type="text" name="date-in" id="date-in" value="24 апреля 2016">
+            <span class="icon-calendar"></span>
+          </div>
+          <div class="input-container">
+            <label for="date-out">Дата выезда:</label>
+            <input class="date-field" type="text" name="date-out" id="date-out" value="4 июля 2016">
+            <span class="icon-calendar"></span>
+          </div>
+          <div class="counts">
+            <div class="count-left">
+              <label class="adults-label" for="adults">Взрослые:</label>
+              <div>
+                <span class="icon-minus"></span>
+                <input class="count-text" type="text" value="2" name="adults" id="adults">
+                <span class="icon-plus"></span>
+              </div>
+            </div>
+            <div class="count-right">
+              <label class="kids-label" for="kids">Дети:</label>
+              <div>
+                <span class="icon-minus"></span>
+                <input class="count-text" type="text" value="0" name="kids" id="kids">
+                <span class="icon-plus"></span>
+              </div>
+            </div>
+          </div>
           <button class="btn" type="submit" name="search-hotels">Найти</button>
         </form>
       </div>
@@ -115,9 +133,10 @@
           <a class="social-btn" href="#">Инстаграм<span class="icon-youtube"></span></a>
         </section>
         <section class="footer-copyright">
-          <a href="#">website by <img src="img/academy-logo.png" width="113" height="39" alt="html academy"></a>
+          <a href="#">website by</a>
         </section>
       </div>
     </footer>
+    <script src="js/form-appearance.js"></script>
   </body>
 </html>
