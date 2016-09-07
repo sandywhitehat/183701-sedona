@@ -555,7 +555,6 @@ main{
   width: 1200px;
   height: 190px;
   color: #ffffff;
-  outline: grey solid 1px;
   background: url("../img/form-background.jpg") no-repeat 0px -57px;
   padding-top: 27px;
   border: none;
@@ -581,8 +580,8 @@ main{
   margin-left: 72px;
 }
 
-.sort-form section:nth-of-type(2) {
-  margin-right: 352px;
+.filter-column-2 {
+  margin-right: 338px;
 }
 /*оформление чек-боксов*/
 
@@ -623,7 +622,7 @@ main{
 }
 
 .filter-range-title {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -631,7 +630,7 @@ main{
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 33px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -653,8 +652,8 @@ main{
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 34px;
-  vertical-align: top;
+  line-height: 32px;
+  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -676,6 +675,12 @@ main{
 .range-controls {
   position: relative;
   margin-bottom: 32px;
+}
+
+.price-controls,
+.range-controls,
+.btn-transparent {
+  margin-left: 10px;
 }
 
 .range-controls .scale {
@@ -716,7 +721,7 @@ main{
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 34px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
