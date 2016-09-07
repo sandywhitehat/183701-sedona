@@ -68,6 +68,17 @@ h2 {
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
+body {
+  background-color: #f2f2f2;
+}
+
+.main-container {
+  margin: auto;
+  width: 1200px;
+  box-shadow: 0 0 15px 0px lightgray;
+  background-color: #ffffff;
+}
+
 .main-navigation {
   width: 1200px;
   margin: auto;
@@ -107,11 +118,6 @@ h2 {
   position: absolute;
   margin-left: 52px;
   margin-top: -14px;
-}
-
-main{
-  width: 1200px;
-  margin: auto;
 }
 
 .cover {
@@ -459,10 +465,7 @@ main{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1200px;
   height: 120px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #ffffff;
   opacity: 0.9;
 }
